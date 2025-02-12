@@ -1,0 +1,33 @@
+h1 {font-family: sans-serif; color:blueviolet}
+h2 {font-family: sans-serif; color: white}
+h3 {font-size: 15px; font-family:sans-serif; color: #6b7b79}
+h4 {font-family: sans-serif; color: blueviolet; font-size: 16px; margin-bottom: 0}
+p {font-family: sans-serif;}
+
+.divTop {display: flex; flex-direction: row;}
+.infoCont {display:flex; flex-direction:column; flex-wrap: wrap; justify-content: space-between; }
+.infoBox {
+    display: flex; 
+    flex-direction: row; 
+    background: #d6dadb; 
+}
+
+.infoLeft { padding: 0 0 0 5%; width: 20%}
+.infoRight{width: 70%;  padding: 2.5% 0% 0 15%;}
+
+.mainCont {display: flex; flex-direction: row; margin-top:-1%}
+.mainLeft{background: #d6dadb; width: 35%; }
+.mainRight{padding-left: 2.5%; width: 80%; padding-bottom: 15%}
+
+@media (max-width: 600px) {
+    .divTop { 
+        flex-direction: column;
+    }
+    .infoBox {
+        flex-direction: column;
+    }
+
+    .infoRight {
+        text-align: left;
+    }
+}
