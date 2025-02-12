@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 public class HelloWorld
 {
@@ -21,7 +21,7 @@ public class HelloWorld
     }
     public static void Main(string[] args)
     {
-        Console.WriteLine (TriangleType(-1.1, 1.1, 1.1));
+        //Console.WriteLine (TriangleType(-1.1, 1.1, 1.1));
     }
         
 }

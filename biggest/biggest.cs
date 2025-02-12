@@ -1,38 +1,44 @@
-using System;
+﻿using System;
+using System.Linq;
 
-public class HelloWorld
+public class Biggest
 {
-    Helper(arr nums, int big) {
-	if nums == []
-		return big //need to determine default val for big? null? 
-	else 
-		if num[0] > big { 
-			return Helper(nums[1:], num[0])
-		} else {
-			return Helper(nums[1:], big)
-		}
+    public static double Helper(double[] nums, double big) {
+        if (nums == null || nums.Length == 1) {
+            if (nums[0] > big) {
+                return nums[0];
+            } else {
+            return big; //need to determine default val for big? null? 
+            }
+    } else {
+            if (nums[0] > big) { 
+                return Helper(nums[1..], nums[0]);
+            } else {
+                return Helper(nums[1..], big);
+            }
+        }
     }
-    Biggest(arr nums) {
-	    return Helper(arr nums, null)
+    public static double GetBiggest(double[] nums) {
+	    return Helper(nums, 0);
     }
 
-    Helper2 (arr nums, int big, int secondBig) {
-	    if nums == [] { 
-		    return (big, secondBig)
-	    } else 
-		    if num[0] > big {
-			    return Helper2(nums[1:], num[0], big)
-		    else {
-			    return Helper2(nums[1:], big, secondBig)
+    public static (double, double) Helper2(double[] nums, double big, double secondBig) {
+	    if (nums == null) { 
+		    return (big, secondBig);
+	    } else {
+		    if (nums[0] > big) {
+			    return Helper2(nums[1..], nums[0], big);
+            } else {
+			    return Helper2(nums[1..], big, secondBig);
 		    }
         }
     }
-    BiggestTwo(arr nums) {
-        return Helper2(nums, null, null)
+    public static (double, double) GetBiggestTwo(double[] nums) {
+        return Helper2(nums, 0, 0);
     } 
 
-    public static void Main(string[] args)
+     public static void Main(string[] args)
     {
-        Console.WriteLine ("Try programiz.pro");
+
     }
 }
