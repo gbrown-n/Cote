@@ -19,6 +19,6 @@ public class Reverse
 
      public static void Main(string[] args)
     {
-        //Console.WriteLine ("Try programiz.pro");
+        //
     }
 }
