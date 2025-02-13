@@ -16,3 +16,9 @@ Once this design plan was made, the elements of the page were designed step by s
 design decsions were made which veered from the original document, but assisted in readability of the information. For example, the size and 
 padding of the text in the benefit and premium table was modifed so that there was a clearer distincition between each column, which 
 greatly assisted in the readability of the document. 
+
+A number of improvements could be made to the website to improve user experience and make the site more adaptable for future use: 
+    - Use of variables for core site elements, such as primary color etc. 
+    - Use of variables to autofill client information (client firstname, lastname, address, data table etc.)
+    - Further optimisation for site mobile viewing 
+    - optimise image loading 

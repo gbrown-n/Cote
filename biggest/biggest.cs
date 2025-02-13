@@ -4,7 +4,7 @@ using System.Linq;
 public class Biggest
 {
     public static double Helper(double[] nums, double big) {
-        if (nums == null || nums.Length == 1) {
+        if (nums == null || nums.Length <= 1) {
             if (nums[0] > big) {
                 return nums[0];
             } else {
@@ -23,7 +23,7 @@ public class Biggest
     }
 
     public static (double, double) Helper2(double[] nums, double big, double secondBig) {
-	    if (nums == null) { 
+	    if (nums == null || nums.Length <= 1) { 
 		    return (big, secondBig);
 	    } else {
 		    if (nums[0] > big) {

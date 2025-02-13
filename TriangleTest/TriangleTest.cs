@@ -31,14 +31,14 @@ public class TriangleTest
         Assert.Equal("SCALENE", Triangle.TriangleType(9,8,5));
         Assert.Equal("SCALENE", Triangle.TriangleType(5,8,9));
     }
-    
+    [Fact]
     public void INEQUALITY()
     {
         Assert.Equal("ERROR", Triangle.TriangleType(1,1,20));
         Assert.Equal("ERROR", Triangle.TriangleType(20,1,1));
         Assert.Equal("ERROR", Triangle.TriangleType(20,1,1));
     }
-
+    [Fact]
     public void NEGATIVE()
     {
         Assert.Equal("ERROR", Triangle.TriangleType(-1,1,1));
@@ -46,7 +46,7 @@ public class TriangleTest
         Assert.Equal("ERROR", Triangle.TriangleType(1,1,-1));
         
     }
-
+    [Fact]
         public void ZERO()
     {
         Assert.Equal("ERROR", Triangle.TriangleType(0,1,1));
