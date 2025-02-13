@@ -1,0 +1,18 @@
+Designing the UI for the 'virasic renewal notice' web page was planned using a simple photo editor to establish each
+section of the page, dividing each element of the page into respective tags, including <div> for main sections, breaks and footers, 
+heading and <p> tags for text, and identifying which images would need to be extracted from the document and added to the page. 
+
+It was decided that the webpage would implement max-width for the page body so that the layout and format of the document would retain 
+its layout as though it was an A4 page. This would make the page printer friendly for the client to keep for their records. Further, 
+the page would be scaled for smaller web windows by organising each element using flexbox displays. Flex elements are useful when designing 
+for adaptable pages as the direction and wrap rules are easily modifyable in the CSS class using a media tag. 
+
+In the cover and premium details, it was decided to use a <table> to layout the information regarding benefit and premium details. 
+The table tag is much better suited for the organisation of data in familiar formats such as an Excel spreadsheet. While this information
+could have also been presented using a series of <div>s, the benefit of the <table> tag is that each row and cell is easily understandable to
+a developer when reading the raw html file. 
+
+Once this design plan was made, the elements of the page were designed step by step, creating and modifying CSS classes as necessary. Some
+design decsions were made which veered from the original document, but assisted in readability of the information. For example, the size and 
+padding of the text in the benefit and premium table was modifed so that there was a clearer distincition between each column, which 
+greatly assisted in the readability of the document. 
