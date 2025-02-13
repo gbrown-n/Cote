@@ -14,4 +14,23 @@ public class ReverseTest
     {
         Assert.Equal("a b c d e f g", Reverse.ReverseWord("g f e d c b a"));
     }
+
+    [Fact]
+    public void Empty()
+    {
+        Assert.Equal("    ", Reverse.ReverseWord("    "));
+    }
+
+    [Fact]
+    public void Palindrome()
+    {
+        //Palindrome - words that are spelt the same backwards and forwards
+        Assert.Equal("racecar", Reverse.ReverseWord("racecar"));
+    }
+
+    [Fact]
+    public void Punctuation()
+    {
+        Assert.Equal("!.,()#", Reverse.ReverseWord("#)(,.!"));
+    }
 }

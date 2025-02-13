@@ -1,0 +1,26 @@
+This task was to create a function that identifies the type of triangle from three given value inputs of traingle side lengths. 
+
+Designing the function begain with defining the five possible outputs of the function: 
+    "EQUILATERAL"
+    "ISOSCLESE"
+    "SCALENE"
+    "RIGHT"
+    "ERROR"
+
+Next the circumstances for each of the outputs was determined: 
+    3 inputs of the same value -> EQUILATERAL
+    2 inputs of the same value -> ISOSCLESE
+    values that satisfy Pythagoras' theorem -> RIGHT
+    any other valud input -> SCALENE
+
+Finally, error handling and invalid input was determined and directed to the "ERROR" output.
+Invalid inputs included: 
+    Non-numerical values
+    Values that do not satisfy the Triangle Inequality Theorem
+    Negative/Zero values
+    Any other values that do not meet the requirments of the four triangle categories (as a catch-all for any other invalid input)
+
+A number of tests were created to ensure the functionality of the program: 
+    Correct identification of each triangle type, regardless of order of variable inputs. 
+    Correct identification of negative side values
+    Correct identification of values that do not meet the Triangle Inequality Theorem 
