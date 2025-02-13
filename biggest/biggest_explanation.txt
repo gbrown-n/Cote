@@ -1,0 +1,33 @@
+This task was to design a program in c# which takes an array of numbers and returns the maximum value. 
+
+To perform this task, a recursive function utilising pattern matching and base cases was used to quickly and efficiently return the solution. 
+
+Firstly, the base case of the recursive function was established: 
+If the input array was empty, the process should terminate since there are no more numbers to compare. 
+This base case would occur in two circumstances: 
+    1. When the user's input is empty.
+    2. Upon reaching the end of the array. 
+
+Establishing the base case first ensures that the recusrive program will terminate regardless of the approach used to design each 
+step. 
+
+Next, it was established that the program would utilise a helper function to track the current progress through the array. 
+Utilising two inputs ensures that the recursive function can track the previous steps without allocating memory. This would also be 
+beneficial when designing the extended program to return the two largest numbers in the array.
+
+Next, a basic formulation of the recursive process was generalised. 
+Through each step of the recursion, the first index of the array would be compared to the current 'max' number. 
+If the value at the front of the array was greater than the max value, the max value would be overwritten. 
+Next, the function would be recursively called, dropping the first index of the array and passing the new max number. 
+Since the length of the array is always decreasing towards zero, it is guarenteed that the function will terminate when the length of the array reaches zero. 
+
+To modify the function to return the two highest values, the helper function was extended to take three inputs: the array, the max value and the second max value. 
+This allows the recursive function to track the two highest values. Then, rather than simply replacing the max value when a new biggest number is found, the old max
+becomes the new 'second' biggest. 
+
+This function performs the analysis of the array in O(n) time, since the function must progress through each value of the array seqentially. 
+An alternative solution to this task may involve utilising a binary search, which could be performed by recursively finding the maximum value of 
+a segment of the array (typically half the length) and returning the higher value. This function would likely terminate faster than O(n) time, at  O(log (n)).
+However, modifying this function to return the two highest values in the array would be performed in a different manner. 
+
+Testing the function invovled designing a number of xunit tests judging edge cases. These included : 

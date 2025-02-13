@@ -1,0 +1,28 @@
+This task was to design a program in c# which takes a sentence as input and returns the string in reverse order. 
+
+To perform this task, a recursive function utilising pattern matching and base cases was used to quickly and efficiently return the solution. 
+
+Firstly, the base case of the recursive function was established: 
+If the input string was empty, then the recusive process should terminate, since there is no characters remaining to change. 
+This base case would occur in two circumstances: 
+    1. When the user's input is empty.
+    2. When the input string has been sliced all the way through, leaving an empty string.
+
+Establishing the base case first ensures that the recusrive program will terminate regardless of the approach used to design each 
+step. 
+
+Next, it was established that the program would utilise a helper function to track the current progress through the input string. 
+Utilising two inputs ensures that the recursive function can track the previous steps without allocating memory. 
+
+Next, a basic formulation of the recursive process was generalised. 
+Through each step of the recursion, the first character of the string would be dropped from the original input, and appended to the front
+of the output string:
+
+    "Hello World", "" -> "ello World" , "H" -> "llo World" , "eH" ... -> "", "dlroW olleH"
+
+Next, the functional programing paradigm of pattern matching was utilised to ensure that the only statements that each recursive step could 
+perform (other than the base case) was a recursive call to the function with some modified input. That is to say, if the program does not reach
+the base case and return the value, then the only other possible function path is a recursive call, which performs the slice/append operation 
+described above. 
+
+Testing the function invovled designing a number of xunit tests judging edge cases. These included : 
