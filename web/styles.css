@@ -17,7 +17,20 @@ p {font-family: sans-serif;}
 
 .mainCont {display: flex; flex-direction: row; margin-top:-1%}
 .mainLeft{background: #d6dadb; width: 35%; }
-.mainRight{padding-left: 2.5%; width: 80%; padding-bottom: 15%}
+.mainRight{padding-left: 2.5%; width: 70%; padding-bottom: 15%}
+
+
+.mainLeft h3 {margin-left: 10%}
+
+.mainLeft img {margin-left: 10%; padding-right:2.5%; width: 25%; height: 25%}
+
+
+.mainSect1 {display: flex; margin-right: 10%; padding: 10% 0}
+.mainLeftBox1 {padding: 2%; width: 70%; border: solid; border-width: 2px; display: flex; flex-direction: column; align-self: center}
+.mainLeftBox1 div {display: flex; flex-direction: row; justify-content: space-between;}
+.mainLeftBox1 p {margin: 0; font-size: 14px}        
+
+
 
 @media (max-width: 600px) {
     .divTop { 
