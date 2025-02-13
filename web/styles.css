@@ -13,12 +13,23 @@ p {font-family: sans-serif;}
 }
 
 .infoLeft { padding: 0 0 0 5%; width: 20%}
+.infoLeft h3 {font-size: 13px;}
+.infoLeft p {font-size: 13px;}
+
 .infoRight{width: 70%;  padding: 2.5% 0% 0 15%;}
+.infoRight h3 {font-size: 13px;}
+.infoRight p {font-size: 13px;}
+
+.bigDivider {background-color:blueviolet;}
+.bigDivider h2 {padding: 2.5%;}
 
 .mainCont {display: flex; flex-direction: row; margin-top:-1%}
 .mainLeft{background: #d6dadb; width: 35%; }
-.mainRight{padding-left: 2.5%; width: 70%; padding-bottom: 15%}
 
+.mainRight{padding-left: 2.5%; width: 70%; padding-bottom: 15%}
+.mainRight p {margin-top: 0; font-size: 14px}
+.sigName {margin-top: 0; font-weight: bold; margin-bottom: 0; font-size: 14px}
+.sigRole {margin-top: 0; font-size: 14px}
 
 .mainLeft h3 {margin-left: 10%}
 
@@ -28,10 +39,24 @@ p {font-family: sans-serif;}
 .mainSect1 {display: flex; margin-right: 10%; padding: 10% 0}
 .mainLeftBox1 {padding: 2%; width: 70%; border: solid; border-width: 2px; display: flex; flex-direction: column; align-self: center}
 .mainLeftBox1 div {display: flex; flex-direction: row; justify-content: space-between;}
-.mainLeftBox1 p {margin: 0; font-size: 14px}        
+.mainLeftBox1 p {margin: 0; font-size: 14px; color: #6b7b79}        
 
+.smallDivider {background-color: #6b7b79}
+.smallDivider h3 {padding: 1% 2.5%; color: white}
 
+.smallDividerPurple {background-color: blueviolet;}
+.smallDividerPurple h3 {padding: 1% 2.5%; color: white}
 
+#coverType {font-family: sans-serif; text-align: left; padding-top: 2%; padding-bottom: 2%;}
+.rowName {font-family: sans-serif; text-align: left;}
+th {font-size: 15px; width: 14%; font-family: sans-serif; padding-top: 2%; padding-bottom: 2%; padding-right: 2.5rem;}
+td { font-size: 13px; width: 14%; font-family: sans-serif; text-align: right; padding-bottom: 1%;}
+
+.tableHeader {padding: 2% 5%; border: solid}
+#tableHeaderCoverType {width:30%; border:solid;}
+.tableCell{width: 14%;}
+
+.footer {border: solid; border-width: 2px; border-color: blueviolet; width: 100%; margin: 5% 0}
 @media (max-width: 600px) {
     .divTop { 
         flex-direction: column;
